@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <div class="calculator">
+      <div class="display">
+        <input class="display-area--operation" readonly></input>
+        <input class="display-area--results" readonly></input>
+      </div>
+      
+        <form>
+      <div class="keys-container">
+        <input type="button" class="operators" value="C" onclick="clearDisplay()">
+        <input type="button" class="operators" value="DE" onclick="deleteFromDisplay()"">
+        <input type="button" class="operators" value="." onclick="addToDisplay('.')">
+        <input type="button" class="operators" value="/" onclick="addToDisplay('/')">
+      </div>
+      <div class="keys-container">
+        <input type="button" value="1" onclick="addToDisplay('1')">
+        <input type="button" value="2" onclick="addToDisplay('2')"">
+        <input type="button" value="3" onclick="addToDisplay('3')">
+        <input type="button" class="operators" value="+" onclick="addToDisplay('+')">
+      </div>
+      <div class="keys-container">
+        <input type="button" value="4" onclick="addToDisplay('4')">
+        <input type="button" value="5" onclick="addToDisplay('5')"">
+        <input type="button" value="6" onclick="addToDisplay('6')">
+        <input type="button" class="operators" value="*" onclick="addToDisplay('*')">
+      </div>
+      <div class="keys-container">
+        <input type="button" value="7" onclick="addToDisplay('7')">
+        <input type="button" value="8" onclick="addToDisplay('8')"">
+        <input type="button" value="9" onclick="addToDisplay('9')">
+        <input type="button" class="operators" value="-" onclick="addToDisplay('-')">
+      </div>
+      <div class="keys-container last-container">
+        <input type="button" value="0" onclick="addToDisplay('0')">
+        <input type="button" value="00" onclick="addToDisplay('00')"">
+        <input type="button" class="equal" value="=" onclick="solve()">
+      </div>
+        </form>
+    </div>
+    </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
